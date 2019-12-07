@@ -6,7 +6,8 @@ namespace Task5
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            User user = new User("5avel", "PAvel", "Boliubash", 32);
+            Console.WriteLine($"Login:{user.Login} \n Name:{user.Name} \n Lastname: {user.LastName}, \n Age:{user.Age}");
         }
     }
 }
