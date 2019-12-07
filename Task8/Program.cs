@@ -6,7 +6,10 @@ namespace Task8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Invoice inv = new Invoice(33333, "Pavlo", "Citrus") { Article = "iMac", Quantity = 1 };
+
+            inv.CostCalculation(true); 
+            inv.CostCalculation(false);
         }
     }
 }
