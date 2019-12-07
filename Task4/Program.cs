@@ -20,7 +20,26 @@ namespace Task4
              */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new Figure(
+                new Point(1, 1, "A"), 
+                new Point(1, 3, "B"), 
+                new Point(3, 1, "C")
+                ).PerimeterCalculator();
+
+            new Figure(
+                new Point(1, 1, "A"),
+                new Point(1, 3, "B"),
+                new Point(3, 3, "C"),
+                new Point(3, 1, "D")
+                ).PerimeterCalculator();
+
+            new Figure(
+                new Point(1, 1, "A"),
+                new Point(1, 3, "B"),
+                new Point(3, 3, "C"),
+                new Point(3, 1, "D"),
+                new Point(0, 2, "E")
+                ).PerimeterCalculator();
         }
     }
 }

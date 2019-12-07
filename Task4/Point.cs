@@ -15,7 +15,7 @@ namespace Task4
         private string name;
         public string Name { get => name; }
 
-        public Figure(int x, int y, string name)
+        public Point(int x, int y, string name)
         {
             this.x = x;
             this.y = y;

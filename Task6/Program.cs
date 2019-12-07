@@ -6,7 +6,18 @@ namespace Task6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Converter converter = new Converter(23.8, 26.37, 0.375);
+
+            converter.UanEur(500);
+            converter.UanUsd(500);
+            converter.UanRub(500);
+
+            converter.EurUan(100);
+            converter.UsdUan(100);
+            converter.RubUan(100);
+
+            Console.ReadKey();
+
         }
     }
 }

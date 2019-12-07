@@ -27,5 +27,26 @@ namespace Task4
         {
             return Math.Sqrt(Math.Pow(p2.X - p1.X, 2) + Math.Pow(p2.Y - p1.Y, 2));
         }
+
+        public void PerimeterCalculator()
+        {
+            string figureName = "";
+            double perimeter = 0;
+            for(int i = 0; i < points.Length; i++)
+            {
+                if(i == points.Length-1)
+                {
+                    perimeter += LengthSide(points[i], points[0]);
+                }
+                else
+                {
+                    perimeter += LengthSide(points[i], points[i + 1]);
+                }
+                figureName += points[i].Name;
+            }
+
+            Console.WriteLine($"Figure Name: {figureName}");
+            Console.WriteLine($"Figure Perimeter: {perimeter}");
+        }
     }
 }
